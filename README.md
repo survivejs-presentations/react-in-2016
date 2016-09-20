@@ -1,6 +1,6 @@
-# React API Design - Case Reactabular
+# React in 2016
 
-This is a brief presentation discussing React API design from component perspective. I use [Reactabular](http://reactabular.js.org/), a table component of mine, to cover different approaches and their pros and cons.
+This is a brief presentation discussing React in 2016. No state management etc., though. Those are in a separate presentation.
 
 ## Reference
 
