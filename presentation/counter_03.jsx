@@ -1,6 +1,6 @@
 import React from 'react';
 
-export default class CatCounter extends React.Component {
+class CatCounter extends React.Component {
   state = { amount: 0 }
   render() {
     return (
@@ -13,6 +13,12 @@ export default class CatCounter extends React.Component {
     );
   }
   sawCat = () => {
-    this.setState(prevState => ({ amount: prevState.amount + 1 }));
+    this.setState(
+      prevState => ({
+        amount: prevState.amount + 1
+      })
+    );
   }
 }
+
+export default CatCounter;

@@ -152,7 +152,7 @@ export default class Presentation extends React.Component {
               Exercises
             </Heading>
             <List>
-              <Appear><ListItem>Copy the cat counter example to <Link href="http://www.webpackbin.com/">WebpackBin</Link></ListItem></Appear>
+              <Appear><ListItem>Copy the first cat counter example to <Link href="http://www.webpackbin.com/">WebpackBin</Link></ListItem></Appear>
               <Appear><ListItem>Make it possible to add two cats at once</ListItem></Appear>
               <Appear><ListItem>*Add a reset button to restore the count to zero</ListItem></Appear>
               <Appear><ListItem>**Add multiple options. Hint: <code>[1, 2, 4].map(...)</code>. Look up React <Link href="https://facebook.github.io/react/docs/reconciliation.html"><code>key</code></Link>. Why is it needed?</ListItem></Appear>

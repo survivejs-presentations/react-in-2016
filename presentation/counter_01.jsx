@@ -1,6 +1,6 @@
 import React from 'react';
 
-export default class CatCounter extends React.Component {
+class CatCounter extends React.Component {
   constructor(props) {
     super(props);
 
@@ -18,6 +18,10 @@ export default class CatCounter extends React.Component {
     );
   }
   sawCat() {
-    this.setState({ amount: this.state.amount + 1 });
+    this.setState({
+      amount: this.state.amount + 1
+    });
   }
 }
+
+export default CatCounter;
