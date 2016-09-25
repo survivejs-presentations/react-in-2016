@@ -1,3 +1,4 @@
+// Modified to work with webpackbin!
 import React from 'react';
 import SawCat from './SawCat';
 
