@@ -2,7 +2,7 @@ import React from 'react';
 import CatsSeen from './CatsSeen';
 import SawCat from './SawCat';
 
-export default class CatCounter extends React.Component {
+class CatCounter extends React.Component {
   constructor(props) {
     super(props);
 
@@ -18,7 +18,11 @@ export default class CatCounter extends React.Component {
       </div>
     );
   }
-  sawCats(amount) {
-    this.setState({ amount: amount + 1 });
+  sawCats() {
+    this.setState({
+      amount: this.state.amount + 1
+    });
   }
 }
+
+export default CatCounter;

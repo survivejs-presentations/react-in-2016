@@ -2,7 +2,7 @@ import React from 'react';
 
 export default class SawCat extends React.Component {
   static propTypes = {
-    amount: number,
+    children: any,
     onClick?: Function
   };
   static defaultProps = {

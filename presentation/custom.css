@@ -12,3 +12,27 @@ pre {
   max-height: 500px;
 }
 
+.cat-button {
+  text-transform: uppercase;
+  letter-spacing: .05em;
+  font-weight: 700;
+  margin: 1em;
+  padding: 0.75em;
+  color: #09b5c4;
+  background-color: white;
+  border: 0.1em solid #6eedf8;
+  border-radius: 2em;
+  outline: none;
+  -webkit-appearance: none;
+  transition: background-color cubic-bezier(.23,1,.32,1) .3s,color cubic-bezier(.23,1,.32,1) .3s;
+}
+
+.cat-button:hover {
+  background-color: #6eedf8;
+  cursor: pointer;
+}
+
+pre {
+  overflow: auto;
+  max-height: 500px;
+}

@@ -1,6 +1,6 @@
 import React from 'react';
 
-export default class CatsSeen extends React.Component {
+class CatsSeen extends React.Component {
   render() {
     const { amount, ...props } = this.props;
 
@@ -11,3 +11,5 @@ export default class CatsSeen extends React.Component {
     )
   }
 }
+
+export default CatsSeen;

@@ -1,8 +1,8 @@
 import React from 'react';
 
-export default class SawCat extends React.Component {
+class SawCat extends React.Component {
   static propTypes = {
-    amount: React.PropTypes.number.isRequired,
+    children: React.PropTypes.element.isRequired,
     onClick: React.PropTypes.func
   };
   static defaultProps = {
@@ -12,3 +12,5 @@ export default class SawCat extends React.Component {
     ...
   }
 }
+
+export default SawCat;

@@ -1,6 +1,6 @@
 import React from 'react';
 
-export default React.createClass({
+const CatsSeen = React.createClass({
   displayName: 'CatsSeen',
   render() {
     const { amount, ...props } = this.props;
@@ -12,3 +12,5 @@ export default React.createClass({
     )
   }
 });
+
+export default CatsSeen;

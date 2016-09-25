@@ -34,7 +34,7 @@ import preloader from "spectacle/lib/utils/preloader";
 import createTheme from "spectacle/lib/themes/default";
 
 // Counter
-import Counter from './counter';
+import Counter from './counter_01';
 
 // Require CSS
 require("normalize.css");
@@ -105,6 +105,17 @@ export default class Presentation extends React.Component {
             </List>
           </Slide>
 
+          <Slide transition={slideTransition}>
+            <Heading size={1}>
+              Alternative Implementations
+            </Heading>
+            <List>
+              <Appear><ListItem><Link href="https://preactjs.com/">Preact</Link> - 3k, subset of API</ListItem></Appear>
+              <Appear><ListItem><Link href="https://www.npmjs.com/package/react-lite">react-lite</Link> - 25k, subset again</ListItem></Appear>
+              <Appear><ListItem><Link href="https://github.com/trueadm/inferno/">inferno</Link> - Partial compatibility, focus on performance, bleeding edge</ListItem></Appear>
+            </List>
+          </Slide>
+
           <Slide transition={slideTransition} bgColor="primary">
             <Heading size={1}>
               Cat Counter
@@ -115,7 +126,23 @@ export default class Presentation extends React.Component {
           <Slide transition={slideTransition} bgColor="primary">
             <CodePane
               lang="jsx"
-              source={require("raw!content!./counter.jsx")}
+              source={require("raw!content!./counter_01.jsx")}
+              margin="20px auto"
+            />
+          </Slide>
+
+          <Slide transition={slideTransition} bgColor="primary">
+            <CodePane
+              lang="jsx"
+              source={require("raw!content!./counter_02.jsx")}
+              margin="20px auto"
+            />
+          </Slide>
+
+          <Slide transition={slideTransition} bgColor="primary">
+            <CodePane
+              lang="jsx"
+              source={require("raw!content!./counter_03.jsx")}
               margin="20px auto"
             />
           </Slide>
@@ -129,6 +156,7 @@ export default class Presentation extends React.Component {
               <Appear><ListItem>Make it possible to add two cats at once</ListItem></Appear>
               <Appear><ListItem>*Add a reset button to restore the count to zero</ListItem></Appear>
               <Appear><ListItem>**Add multiple options. Hint: <code>[1, 2, 4].map(...)</code>. Look up React <Link href="https://facebook.github.io/react/docs/reconciliation.html"><code>key</code></Link>. Why is it needed?</ListItem></Appear>
+              <Appear><ListItem>***Try <code>this.setState(..., cb)</code></ListItem></Appear>
             </List>
           </Slide>
 
@@ -300,6 +328,7 @@ export default class Presentation extends React.Component {
               <Link href="http://flowtype.org/">Flow</Link>
             </Heading>
             <List>
+              <Appear><ListItem>Checker, not a language</ListItem></Appear>
               <Appear><ListItem>Gradual typing through static analysis</ListItem></Appear>
               <Appear><ListItem>Might replace <code>propTypes</code> over longer term</ListItem></Appear>
               <Appear><ListItem>Runtime checks with <Link href="https://www.npmjs.com/package/babel-plugin-typecheck">babel-plugin-typecheck</Link></ListItem></Appear>

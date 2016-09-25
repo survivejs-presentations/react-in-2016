@@ -1,10 +1,10 @@
 import React from 'react';
 
-const SawCat = ({ amount, onClick, ...props }) => (
+const SawCat = ({ children, onClick, ...props }) => (
   ...
 );
 SawCat.propTypes = {
-  amount: React.PropTypes.number.isRequired,
+  children: React.PropTypes.element.isRequired,
   onClick: React.PropTypes.func
 };
 SawCat.defaultProps = {

@@ -2,12 +2,8 @@ import React from 'react';
 import CatsSeen from './CatsSeen';
 import SawCat from './SawCat';
 
-export default class CatCounter extends React.Component {
-  constructor(props) {
-    super(props);
-
-    this.state = { amount: 0 };
-  }
+class CatCounter extends React.Component {
+  state = { amount: 0 } // Stage 2 syntax - property initializer
   render() {
     return (
       <div>
@@ -18,7 +14,11 @@ export default class CatCounter extends React.Component {
     );
   }
   // Stage 2 syntax - property initializer
-  sawCats(amount) => {
-    this.setState({ amount: amount + 1 });
-  };
+  sawCats = () => {
+    this.setState(prevState => ({
+      amount: prevState.amount + 1
+    }));
+  }
 }
+
+export default CatCounter;
