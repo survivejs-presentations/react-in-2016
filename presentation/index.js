@@ -346,6 +346,22 @@ export default class Presentation extends React.Component {
             />
           </Slide>
 
+          <Slide transition={slideTransition} bgColor="primary">
+            <Heading size={4}>
+              ES6 Class with Flow types II
+            </Heading>
+            <CodePane
+              lang="jsx"
+              source={require("raw!../examples/flow_02.jsx")}
+              margin="20px auto"
+            />
+            <Layout>
+              <Text>
+                <Link href="http://blog.rstankov.com/flow-as-replacement-for-proptype/">Flow as replacement for PropType</Link>
+              </Text>
+            </Layout>
+          </Slide>
+
           <Slide transition={slideTransition}>
             <Heading size={1}>
               TypeScript
