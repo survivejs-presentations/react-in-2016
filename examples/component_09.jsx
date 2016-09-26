@@ -14,11 +14,8 @@ class CatCounter extends React.Component {
   render() {
     return (
       <div>
-        <input type="text" ref={e => {
-          if (e) {
-            this.refs.amount = e;
-          }
-        }} />
+        {/* Capture a ref (controlled vs. uncontrolled) */}
+        <input type="text" ref={e => this.refs.amount = e} />
         <div>{this.state.amount}</ div>
         <SawCat className="cat-button" onClick={this.sawCats}>
           Saw a cat
