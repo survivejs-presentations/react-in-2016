@@ -404,6 +404,11 @@ export default class Presentation extends React.Component {
                 Juho Vepsäläinen
               </Heading>
             </Link>
+            <Layout>
+              <Text>
+                <Link href="http://www.appelsiini.fi/">With special thanks to Elisa Appelsiini</Link>
+              </Text>
+            </Layout>
           </Slide>
         </Deck>
       </Spectacle>
