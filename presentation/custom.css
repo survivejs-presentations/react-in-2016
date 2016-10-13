@@ -3,6 +3,10 @@ a {
   background: rgba(0, 0, 0, 0.34);
 }
 
+button svg {
+  fill: rgba(255, 219, 169, 0.43) !important;
+}
+
 pre code {
   font-size: 125%;
 }
@@ -30,9 +34,4 @@ pre {
 .cat-button:hover {
   background-color: #6eedf8;
   cursor: pointer;
-}
-
-pre {
-  overflow: auto;
-  max-height: 500px;
 }
