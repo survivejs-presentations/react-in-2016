@@ -52,7 +52,10 @@ const images = mapValues({
 preloader(images);
 
 const theme = createTheme({
-  primary: "#09b5c4"
+  primary: "white",
+  secondary: "black",
+  tertiary: "#09b5c4",
+  quartenary: "rgba(255, 219, 169, 0.43)"
 });
 
 export default class Presentation extends React.Component {
@@ -60,19 +63,19 @@ export default class Presentation extends React.Component {
     return (
       <Spectacle theme={theme}>
         <Deck transition={slideTransition} transitionDuration={500}>
-          <Slide transition={slideTransition} bgColor="primary">
-            <Heading size={1} fit caps lineHeight={1} textColor="black">
+          <Slide transition={slideTransition} bgColor="secondary">
+            <Heading size={1} fit caps lineHeight={1} textColor="tertiary">
               React in 2016
             </Heading>
           </Slide>
 
-          <Slide transition={slideTransition} bgColor="primary">
+          <Slide transition={slideTransition}>
             <Link href="https://facebook.github.io/react/">
               <Image src={images.react} />
             </Link>
           </Slide>
 
-          <Slide transition={slideTransition} bgColor="primary">
+          <Slide transition={slideTransition}>
             <Heading size={2}>
               Virtual DOM
             </Heading>
@@ -116,14 +119,14 @@ export default class Presentation extends React.Component {
             </List>
           </Slide>
 
-          <Slide transition={slideTransition} bgColor="primary">
+          <Slide transition={slideTransition}>
             <Heading size={1}>
               Cat Counter
             </Heading>
             <Counter />
           </Slide>
 
-          <Slide transition={slideTransition} bgColor="primary">
+          <Slide transition={slideTransition}>
             <CodePane
               lang="jsx"
               source={require("raw!content!./counter_01.jsx")}
@@ -131,7 +134,7 @@ export default class Presentation extends React.Component {
             />
           </Slide>
 
-          <Slide transition={slideTransition} bgColor="primary">
+          <Slide transition={slideTransition}>
             <CodePane
               lang="js"
               source={require("raw!content!./counter_no_jsx.js")}
@@ -139,7 +142,7 @@ export default class Presentation extends React.Component {
             />
           </Slide>
 
-          <Slide transition={slideTransition} bgColor="primary">
+          <Slide transition={slideTransition}>
             <CodePane
               lang="jsx"
               source={require("raw!content!./counter_02.jsx")}
@@ -147,7 +150,7 @@ export default class Presentation extends React.Component {
             />
           </Slide>
 
-          <Slide transition={slideTransition} bgColor="primary">
+          <Slide transition={slideTransition}>
             <CodePane
               lang="jsx"
               source={require("raw!content!./counter_03.jsx")}
@@ -168,13 +171,13 @@ export default class Presentation extends React.Component {
             </List>
           </Slide>
 
-          <Slide transition={slideTransition} bgColor="white">
-            <Heading size={2} textColor="primary">
+          <Slide transition={slideTransition} bgColor="secondary">
+            <Heading size={2} textColor="tertiary">
               Components
             </Heading>
           </Slide>
 
-          <Slide transition={slideTransition} bgColor="primary">
+          <Slide transition={slideTransition}>
             <Heading size={4}>
               Stateless Functions
             </Heading>
@@ -185,7 +188,7 @@ export default class Presentation extends React.Component {
             />
           </Slide>
 
-          <Slide transition={slideTransition} bgColor="primary">
+          <Slide transition={slideTransition}>
             <Heading size={4}>
               Stateless Functions with a Shorthand
             </Heading>
@@ -196,7 +199,7 @@ export default class Presentation extends React.Component {
             />
           </Slide>
 
-          <Slide transition={slideTransition} bgColor="primary">
+          <Slide transition={slideTransition}>
             <Heading size={4}>
               Stateless Functions Destructured
             </Heading>
@@ -207,7 +210,7 @@ export default class Presentation extends React.Component {
             />
           </Slide>
 
-          <Slide transition={slideTransition} bgColor="primary">
+          <Slide transition={slideTransition}>
           <Heading size={4}>
             Stateless Functions Destructured and Formatted for Readability (parens!)
           </Heading>
@@ -218,7 +221,7 @@ export default class Presentation extends React.Component {
             />
           </Slide>
 
-          <Slide transition={slideTransition} bgColor="primary">
+          <Slide transition={slideTransition}>
             <Heading size={4}>
               <code>React.createClass</code> (old style)
             </Heading>
@@ -229,7 +232,7 @@ export default class Presentation extends React.Component {
             />
           </Slide>
 
-          <Slide transition={slideTransition} bgColor="primary">
+          <Slide transition={slideTransition}>
             <Heading size={4}>
               ES6 Class (new style)
             </Heading>
@@ -240,7 +243,7 @@ export default class Presentation extends React.Component {
             />
           </Slide>
 
-          <Slide transition={slideTransition} bgColor="primary">
+          <Slide transition={slideTransition}>
             <Heading size={4}>
               ES6 Class with Manual Binding
             </Heading>
@@ -251,7 +254,7 @@ export default class Presentation extends React.Component {
             />
           </Slide>
 
-          <Slide transition={slideTransition} bgColor="primary">
+          <Slide transition={slideTransition}>
             <Heading size={4}>
               ES6 Class with a Property Initializer
             </Heading>
@@ -262,7 +265,7 @@ export default class Presentation extends React.Component {
             />
           </Slide>
 
-          <Slide transition={slideTransition} bgColor="primary">
+          <Slide transition={slideTransition}>
             <Heading size={4}>
               ES6 Class with a Ref
             </Heading>
@@ -273,7 +276,7 @@ export default class Presentation extends React.Component {
             />
           </Slide>
 
-          <Slide transition={slideTransition} bgColor="primary">
+          <Slide transition={slideTransition}>
             <Heading size={2}>
               Lifecycle Methods
             </Heading>
@@ -292,8 +295,8 @@ export default class Presentation extends React.Component {
             </List>
           </Slide>
 
-          <Slide transition={slideTransition} bgColor="white">
-            <Heading size={2} textColor="primary">
+          <Slide transition={slideTransition} bgColor="secondary">
+            <Heading size={2} textColor="tertiary">
               Typing
             </Heading>
           </Slide>
@@ -309,7 +312,7 @@ export default class Presentation extends React.Component {
             </List>
           </Slide>
 
-          <Slide transition={slideTransition} bgColor="primary">
+          <Slide transition={slideTransition}>
             <Heading size={4}>
               <code>propTypes</code> and <code>defaultProps</code>
             </Heading>
@@ -320,7 +323,7 @@ export default class Presentation extends React.Component {
             />
           </Slide>
 
-          <Slide transition={slideTransition} bgColor="primary">
+          <Slide transition={slideTransition}>
             <Heading size={4}>
               <code>propTypes</code> and <code>defaultProps</code> through <code>static</code>
             </Heading>
@@ -343,7 +346,7 @@ export default class Presentation extends React.Component {
             </List>
           </Slide>
 
-          <Slide transition={slideTransition} bgColor="primary">
+          <Slide transition={slideTransition}>
             <Heading size={4}>
               ES6 Class with Flow types
             </Heading>
@@ -354,7 +357,7 @@ export default class Presentation extends React.Component {
             />
           </Slide>
 
-          <Slide transition={slideTransition} bgColor="primary">
+          <Slide transition={slideTransition}>
             <Heading size={4}>
               ES6 Class with Flow types II
             </Heading>
@@ -394,9 +397,9 @@ export default class Presentation extends React.Component {
             </List>
           </Slide>
 
-          <Slide transition={slideTransition} bgColor="white" notes="">
+          <Slide transition={slideTransition}>
             <Link href="http://www.survivejs.com/">
-              <Heading size={1} textColor="primary">
+              <Heading size={1}>
                 SurviveJS
               </Heading>
             </Link>
@@ -412,11 +415,6 @@ export default class Presentation extends React.Component {
                 Juho Vepsäläinen
               </Heading>
             </Link>
-            <Layout>
-              <Text>
-                <Link href="http://www.appelsiini.fi/">With special thanks to Elisa Appelsiini</Link>
-              </Text>
-            </Layout>
           </Slide>
         </Deck>
       </Spectacle>
